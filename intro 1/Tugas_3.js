@@ -1,23 +1,14 @@
-const printSegitiga = 9;
-
-function reverseWords(words){
-    let revWords = "";
-    for(let i = words.length-2; i>=0; i--){
-        revWords = revWords + words[i];
-    }
-    return(revWords)
-}
+const printSegitiga = 3;
+let strNumber = ''
 
 if (typeof(printSegitiga) === "number"){
     for (let i=printSegitiga; i>=1; i--){
-        let numberChar = "";
-        for(let j=i; j>=1; j--){
-            number = j;
-            numberChar = numberChar + `${number} `
+        for(let j=1; j<=i; j++){
+            strNumber = strNumber + j.toString() + " "
         }
-        numberChar = reverseWords(numberChar)
-        console.log(numberChar)
+        strNumber = strNumber + "\n"
     }
+    console.log(strNumber)
 }
 else{
     console.log("Data harus number");
