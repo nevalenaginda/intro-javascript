@@ -13,17 +13,22 @@ let data = {
     website: "hildegard.org",
 }
 
-let dataku = {
+//mengubah data name, email, dan menambah hobby menggunakan spread
+data = {
     ...data,
     name: "Nevalen Aginda Prasetyo",
     email: "nevalen@gmail.com",
-    hobby: ["ngoding","jalan-jalan", "main game", "nonton anime"]
+    hobby: ["ngoprek elektronik","jalan-jalan", "main game", "nonton anime"]
 
 }
-console.log(dataku);
+console.log("Data yang telah diubah \n", data);
 
-const {street, city}= dataku.address;
 
-console.log(`Street: ${street}
+//mengambil data street dan city menggunakan destructing
+let {street, city}= data.address;
+
+console.log(`
+Hasil destructing
+Street: ${street}
 City: ${city}`);
 

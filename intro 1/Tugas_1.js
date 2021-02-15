@@ -1,7 +1,7 @@
 const biodata = {
 	name: "Nevalen Aginda Prasetyo",
 	age: "23",
-    hobbies: ["ngoding","jalan-jalan", "main game", "nonton anime"],
+    hobbies: ["Ngoprek Elektronik", "Jalan-Jalan", "Main Game", "Nonton Anime"],
     isMaried: false,
     schoolList: [
         {
@@ -25,10 +25,9 @@ const biodata = {
         {
             name: "Universitas Lampung",
             yearIn: 2015,
-            yearOut: 2021,
+            yearOut: 2020,
             major: "Fisika Instrumentasi"
-        }
-    ],
+        }],
     skills:[
         {
             skillName: "Arduino",
@@ -57,9 +56,7 @@ const biodata = {
         {
             skillName: "Javascript",
             level: "Beginner"
-        }
-
-    ],
+        }],
     interestInCoding: true 
 }
 
