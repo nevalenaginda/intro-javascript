@@ -1,6 +1,17 @@
+/*
+Buat variabel dengan nama biodata dan tipe data object dengan value dan tipe data  sebagai berikut:
+name (string)
+age(number)
+hobbies (array)
+IsMaried (boolean)
+schoolList (Array of Object) with key name, yearIn, yearOut, and major (if any, if no set “null” )
+skills (Array of Obj) with key skillName and level (beginner, advanced, expert)
+interestInCoding (Boolean)
+*/
+
 const biodata = {
 	name: "Nevalen Aginda Prasetyo",
-	age: "23",
+	age: 23,
     hobbies: ["Ngoprek Elektronik", "Jalan-Jalan", "Main Game", "Nonton Anime"],
     isMaried: false,
     schoolList: [

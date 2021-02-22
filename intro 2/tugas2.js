@@ -1,12 +1,12 @@
 // fungsi untuk memfilter nama sesuai dengan string yang diinginkan
 let filterName = (str, arrayNames) => {
-    let resultName = arrayNames.filter(name => name.toLowerCase().includes(str.toLowerCase()) && name)
+    const resultName = arrayNames.filter(name => name.toLowerCase().includes(str.toLowerCase()) && name)
     return resultName 
 }
 
 //fungsi untuk membatasi jumlah output dan mencetak informasi
-let outputName = (str, count, arrayNames) => {
-    outputNames = arrayNames.filter((name, index) => index < count && name)
+let print = (str, count, arrayNames) => {
+    const outputNames = arrayNames.filter((name, index) => index < count && name)
 
     const output1 = `Berhasil ditemukan ${outputNames.length} nama yang ingin dicari dari ${arrayNames.length} nama mengandung elemen "${str}"`
     const output2 = `Jumlah nama mengandung elemen "${str}" yang ditemukan hanya ${outputNames.length} tidak sampai ${count}`
@@ -25,10 +25,13 @@ let searchName = (str, count, callback) => {
                     "Ella", "Faith", "Olivia", "Penelope"
     ]
 
-    let filterName = callback(str, names)
-    outputName(str, count, filterName)
+    const filterName = callback(str, names)
+    print(str, count, filterName)
 }
 
-searchName("an", 4, filterName)
+// searchName("an", 3, filterName)
+//searchName("Zay", 12, filterName)
+ searchName("an", 10, filterName)
+
 
     
