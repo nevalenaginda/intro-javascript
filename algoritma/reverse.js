@@ -1,40 +1,19 @@
 const reverse = (words) => {
-    words = words.split(" ")
-    let newWords= ""
-    for (let i = words.length-1; i>=0; i--){ 
-        newWords+=words[i]+" "
-    } 
-    console.log(newWords);
+    //validasi input
+    if (typeof (words) === 'string'){
+        //memisahkan kata berdasarkan spasi
+        words = words.split(" ")
+        let newWords= ""
+        //membalik kata
+        for (let i = words.length-1; i>=0; i--){ 
+            newWords+=words[i]+" "
+        } 
+        //menampilkan hasil
+        console.log(newWords);
+    }
+    else{
+        console.log('Input harus string');
+    }
 }
 
-reverse(" Saya suka belajar Javascript dengan kamu")
-
-// var teks = " Saya suka belajar Javascript"
-// var array=[];
-// var kata="";
-// j=0;
-// for (i=0; i<teks.length; i++){
-//     if (teks[i]!= " "){
-//         kata = kata + teks[i];
-//     }
-//     else {
-//         array[j]=kata;
-//         //console.log(j)
-//         j++;
-//         kata="";
-//     }  
-//    /* 
-//     if (i==teks.length-1){
-//     array[j]=kata;
-//     }
-//     */
-    
-// }
-// array[j]=kata;
-// console.log(array)
-
-// var teks="";
-// for (j=j; j>=0; j--){
-//     teks = teks + array[j]+" "
-// }
-// console.log(teks)
+reverse('Aku Belajar di Arkademy')
